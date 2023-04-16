@@ -1,0 +1,5 @@
+I used a publisher to publish the data in IMU format. 
+The Imu data consisted of two Vector3 objects giving the values of linear acceleration and angular velocity.
+I initially thought of changing the values by incrementing the varibales at a constant pace using time.sleep() but I thought that that might lead to inaccuracies in the time taken.
+So I used time.time() to calculate the time from the start of the program and adjusted the linear acceleration and angular velocity values accordingly.
+The imu data was then published using pub.publish()
